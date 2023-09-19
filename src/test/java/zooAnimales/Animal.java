@@ -78,12 +78,25 @@ public class Animal {
 		return "Mamiferos: " + Mamifero.cantidadMamiferos()+"\n"+"Aves: " + Ave.cantidadAves()+"\n"+"Reptiles: " + Reptil.cantidadReptiles()+"\n"+"Peces: " + Pez.cantidadPeces()+"\n"+"Anfibios: "+ Anfibio.cantidadAnfibios();
 	}
 	
-	public String toString() {
-		if(zona.get(0).getZoo()!=null && zona!=null ) {
-			return "Mi nombre es "+ this.nombre+", tengo una edad de "+ this.edad +", habito en "+ this.habitat+ " y mi genero es "+ this.genero+",la zona en la que me ubico es "+ zona.get(0)+", en el "+ zona.get(0).getZoo();
+public String toString() {
+		
+		if (this.zona.size() != 0) {
+			
+			return ("Mi nombre es " + this.nombre + 
+					", tengo una edad de " + this.edad + 
+					", habito en " + this.habitat + 
+					" y mi genero es " + this.genero + 
+					" la zona en la que me ubico es " + this.zona.get(0) + 
+					", en el " + this.zona.get(0).getZoo());
+			
 		}
+		
 		else {
-			return "Mi nombre es "+ this.nombre+", tengo una edad de "+ this.edad +", habito en "+ this.habitat+ " y mi genero es "+ this.genero;
+			
+			return ("Mi nombre es " + this.nombre + 
+					", tengo una edad de " + this.edad + 
+					", habito en " + this.habitat + 
+					" y mi genero es " + this.genero);
 		}
 	}
 	
