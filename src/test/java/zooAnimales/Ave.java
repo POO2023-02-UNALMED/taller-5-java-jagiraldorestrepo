@@ -30,6 +30,9 @@ public class Ave extends Animal{
 	public void setColorPlumas(String colorPlumas) {
 		this.colorPlumas = colorPlumas;
 	}
+	public static int cantidadAves() {
+		return listado.size();
+	}
 	
 	
 	
