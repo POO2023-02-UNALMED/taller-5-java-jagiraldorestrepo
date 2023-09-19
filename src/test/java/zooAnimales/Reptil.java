@@ -8,5 +8,35 @@ public class Reptil extends Animal{
 	public static int serpientes;
 	private String colorEscamas;
 	private int largoCola;
+	
+	public Reptil() {
+		this(null,0,null,null,null,0);
+	}
+	
+	public Reptil(String nombre, int edad, String habitat, String genero,String colorEscamas, int largoCola) {
+		super(nombre,edad,habitat,genero);
+		this.colorEscamas=colorEscamas;
+		this.largoCola=largoCola;
+		listado.add(this);
+	}
+	
+	public ArrayList<Reptil> getListado() {
+		return listado;
+	}
+	public void setListado(ArrayList<Reptil> listado) {
+		Reptil.listado = listado;
+	}
+	public String getColorEscamas() {
+		return colorEscamas;
+	}
+	public void setColorEscamas(String colorEscamas) {
+		this.colorEscamas = colorEscamas;
+	}
+	public int getLargoCola() {
+		return largoCola;
+	}
+	public void setLargoCola(int largoCola) {
+		this.largoCola = largoCola;
+	}
 
 }
