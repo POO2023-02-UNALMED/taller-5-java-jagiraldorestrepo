@@ -2,9 +2,6 @@ package gestión;
 
 import java.util.ArrayList;
 
-
-
-
 public class Zoologico {
 	
 	private String nombre;
@@ -46,5 +43,17 @@ public class Zoologico {
 		this.zonas = zonas;
 	}
 	
+	public int cantidadTotalAnimales() {
+		int x=0;
+		for (int i=0;i<zonas.size();i++) {
+			x=x+zonas.get(i).cantidadAnimales();
+			}
+		return x;
+		}
+	
+	public void agregarZonas(Zona newZona) {
+		zonas.add(newZona);
+		newZona.setZoo(this);
+	}
 
 }
