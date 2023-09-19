@@ -55,5 +55,9 @@ public class Zona {
 		return animales.size();
 	
 	}
+	
+	public void agregarAnimales(Animal a) {
+		animales.add(a);
+	}
 
 }
