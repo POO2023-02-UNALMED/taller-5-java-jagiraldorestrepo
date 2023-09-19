@@ -1,4 +1,6 @@
 package zooAnimales;
+
+
 import java.util.ArrayList;
 
 
@@ -10,7 +12,7 @@ public class Animal {
 	private int edad;
 	private String habitat; 
 	private String genero;
-	private Arraylist<Zona> zona;
+	//private Arraylist<Zona> zona;
 	
 	
 	
