@@ -34,6 +34,14 @@ public class Ave extends Animal{
 		return listado.size();
 	}
 	
+	public static Animal crearHalcon(String name, int age, String gender) {
+		halcones++;
+		return new Ave(name,age,"montanas",gender,"cafe glorioso");
+	}
+	public static Animal crearAguila(String name, int age, String gender) {
+		aguilas++;
+		return new Ave(name,age,"montanas",gender,"blanco y amarillo");
+	}
 	
 	
 
